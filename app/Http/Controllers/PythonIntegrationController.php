@@ -22,7 +22,7 @@ class PythonIntegrationController extends Controller
         $client = new Client();
 
         try {
-            $response = $client->post('https://wonderful-easley.217-154-15-217.plesk.page/convert', [
+            $response = $client->post('127.0.0.1:3000/convert-json', [
                 'multipart' => [
                     [
                         'name'     => 'file',
@@ -68,7 +68,7 @@ class PythonIntegrationController extends Controller
                 ];
             }
 
-            $response = $client->post('http://127.0.0.1:3000/convert-json', [
+            $response = $client->post('', [
                 'multipart' => $multipart
             ]);
 
