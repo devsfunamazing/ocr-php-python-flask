@@ -68,7 +68,7 @@ class PythonIntegrationController extends Controller
                 ];
             }
 
-            $response = $client->post('', [
+            $response = $client->post('https://optimistic-fermi.217-154-15-217.plesk.page/', [
                 'multipart' => $multipart
             ]);
 
